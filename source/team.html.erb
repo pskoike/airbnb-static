@@ -1,0 +1,10 @@
+<div class="padded">
+<ul class="list-inline text-center">
+  <% ["alex", "arthur", "bruno", "charles", "christophe", "fabio", "francois", "jackson", "joão", "letícia", "livia", "lucas", "luciano", "pedro", "tamara", "thiago"].each do |member| %>
+    <li>
+      <%= image_tag "#{member}.png", class: "avatar" %>
+      <h4><%= member.capitalize %></h4>
+    </li>
+  <% end %>
+</ul>
+</div>

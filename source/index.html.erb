@@ -1,10 +1,120 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: Welcome to a New Life
 ---
 
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
+<div class="banner">
+  <div class="banner-content text-center">
+    <h1>WELCOME TO A NEW LIFE</h1>
+    <p>Your life sucks? Tired of having no love at all? Let us change your life forever. It's easy, fast and free!</p>
+    <button type="button" class="btn btn-primary btn-lg">How it works</button>
+  </div>
 </div>
+
+<div class="wrapper-features text-center padded">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-lg-3">
+        <!-- <img src="images/beer.png" alt=""> -->
+        <%= image_tag "beer.png" %>
+        <h2>Beer</h2>
+        <p>Drink all the beer you can!</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-3">
+        <!-- <img src="images/dollar.png" alt=""> -->
+        <%= image_tag "dollar.png" %>
+        <h2>Dollar</h2>
+        <p>Earn money by doing nothing!</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-3">
+        <!-- <img src="images/globe.png" alt=""> -->
+        <%= image_tag "globe.png" %>
+        <h2>Globe</h2>
+        <p>Travel the world for free!</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-3">
+        <!-- <img src="images/heart.png" alt=""> -->
+        <%= image_tag "heart.png" %>
+        <h2>Heart</h2>
+        <p>Find the love of your live!</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper-grey padded">
+  <div class="container">
+    <h2 class="text-center">See our main activities</h2>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://lorempixel.com/output/cats-q-c-640-480-3.jpg');">
+          <div class="card-category">Light</div>
+          <div class="card-description">
+            <h2>Love Coaching</h2>
+            <p>Learn how be cute.</p>
+          </div>
+          <!-- <img class="card-user avatar-bordered" src="images/anne.jpg"> -->
+          <%= image_tag "anne.jpg", class: "card-user avatar-bordered" %>
+          <!-- <a class="card-link" href="#"></a> -->
+          <%= link_to "", "#", class: "card-link" %>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://lorempixel.com/output/nightlife-q-c-640-480-6.jpg');">
+          <div class="card-category">Hardcore</div>
+          <div class="card-description">
+            <h2>Drink Techniques</h2>
+            <p>Drink like a master.</p>
+          </div>
+          <!-- # <img class="card-user avatar-bordered" src="images/seb.jpg"> -->
+          <%= image_tag "seb.jpg", class: "card-user avatar-bordered" %>
+          <!-- <a class="card-link" href="#"></a> -->
+          <%= link_to "", "#", class: "card-link" %>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://lorempixel.com/output/abstract-q-c-640-480-1.jpg');">
+          <div class="card-category">Xtreme</div>
+          <div class="card-description">
+            <h2>Show me the money</h2>
+            <p>Make money from smoke. Yes you can. </p>
+          </div>
+          <!-- # <img class="card-user avatar-bordered" src="images/romain.jpeg"> -->
+          <%= image_tag "romain.jpeg", class: "card-user avatar-bordered" %>
+          <!-- <a class="card-link" href="#"></a> -->
+          <%= link_to "", "#", class: "card-link" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="padded text-center">
+  <h2>See all that you're missing</h2>
+  <p>Leave us your mail try not to freak out</p>
+  <form action="" class="form-inline">
+    <input type="email" class="form-control" placeholder="jane@gmail.com">
+    <imput type="submit" class="btn btn-primary">Subscribe</imput>
+  </form>
+</div>
+
+<div id="map" style="width: 100%; height: 400px;"></div>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript">
+  var myLatlng = new google.maps.LatLng(48.8655909, 2.378983);
+
+  var myOptions = {
+    zoom: 16,
+    center: myLatlng,
+    scrollwheel: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}] // TODO: replace [] by array from https://snazzymaps.com/
+  };
+
+  var map = new google.maps.Map(document.getElementById('map'), myOptions);
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: "You are here!"
+  });
+</script>
